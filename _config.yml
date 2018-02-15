@@ -16,11 +16,12 @@
 title: James Tookey
 email: jamestooks@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  James Tookey - Developer based in Gloucestershire
+  Full stack developer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jamestooks
 github_username:  jamestooks
+author: James Tookey
 
 # Build settings
 markdown: kramdown

@@ -4,11 +4,13 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
 ---
+<h2>About me</h2>
+I am a full stack developer with 8 years commercial experience across multiple languages including PHP, C# and JavaScript.
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+<h2>Blog posts</h2>
+
+{% for post in site.posts %}
+  <h3><a href="{{ post.url }}">{{ post.title }}</a><br />
+  <small>{{ post.date | date: "%-d %b %Y at %H:%M" }}</small></h3>
+  {{ post.blurb }}
+{% endfor %}

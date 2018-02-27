@@ -7,6 +7,8 @@ layout: default
 <h2>About me</h2>
 I am a full stack developer with 8 years commercial experience across multiple languages including PHP, C# and JavaScript.
 
+Blog posts are mostly solutions to problems I've encountered and are for me to keep for future reference.
+
 <h2>Blog posts</h2>
 
 {% for post in site.posts %}

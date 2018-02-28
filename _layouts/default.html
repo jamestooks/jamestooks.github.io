@@ -15,14 +15,20 @@
   <body>
     <div class="wrapper">
       <header>
-        <a href="{{ site.github.url }}"> <h1>{{ site.title | default: site.github.repository_name }}</h1> </a>
+        <a href="/"> <h1>{{ site.title | default: site.github.repository_name }}</h1> </a>
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
         <p class="view">
-            <a href="https://github.com/jamestooks">View My GitHub Profile</a><br />
-            <a href="https://stackoverflow.com/users/1706758/james-tookey">View My StackOverflow Profile</a><br />
-            <a href="https://www.twitter.com/jamestooks">View My Twitter</a>
+            <a href="https://github.com/jamestooks">GitHub profile</a><br />
+            <a href="https://stackoverflow.com/users/1706758/james-tookey">StackOverflow Profile</a><br />
+            <a href="https://www.twitter.com/jamestooks">Twitter</a>
         </p>
+
+        <h4>Latest blogs</h4>
+        {% for post in site.posts limit:3 %}
+          <h5><a href="{{ post.url }}">{{ post.title }}</a><br />
+          <small>{{ post.date | date: "%-d %b %Y at %H:%M" }}</small></h5>
+        {% endfor %}
       </header>
       <section>
 
